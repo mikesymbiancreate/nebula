@@ -1,0 +1,102 @@
+
+// Overwrite Plugin Styles
+@import "minifyboot.scss";
+@import "main.scss";
+@import "flexslider.scss";
+
+@import "boxed_content.scss";
+@import "contact_cta_banner.scss";
+@import "product_carousel.scss";
+@import "contact.scss";
+@import "contact_form.scss";
+@import "button_row.scss";
+@import "heading_box.scss";
+@import "img-txt-block.scss";
+@import "logos_block.scss";
+@import "testimonial.scss";
+@import "header2.scss";
+@import "linebreak.scss";
+@import "map.scss";
+@import "social-icons.scss";
+@import "txt-block.scss";
+@import "contact_cta.scss";
+@import "trio_box.scss";
+@import "team_box.scss";
+@import "video_box.scss";
+@import "footer.scss";
+@import "constellation.scss";
+@import "constellation_three.scss";
+
+@import "uniques.scss";
+
+/* ANIMATION */
+
+/* ANIMATION */
+@-webkit-keyframes fadeInFromNone { 
+	0% { display: none; opacity: 0; }
+	1% { display: block; opacity: 0; }
+	100% {display: block; opacity: 1; }
+}
+@-moz-keyframes fadeInFromNone { 
+	0% { display: none; opacity: 0; }
+	1% { display: block; opacity: 0; }
+	100% {display: block; opacity: 1; }
+}
+@-o-keyframes fadeInFromNone { 
+	0% { display: none; opacity: 0; }
+	1% { display: block; opacity: 0; }
+	100% {display: block; opacity: 1; }
+}
+@keyframes fadeInFromNone { 
+	0% { display: none; opacity: 0; }
+	1% { display: block; opacity: 0; }
+	100% {display: block; opacity: 1; }
+}
+
+
+/* FADE OUT TO NONE */
+@keyframes fadeOutToNone { 
+	0% { display: block; opacity: 1;  }
+	99% { display: block; opacity: 0;  }
+	100% { display: none; opacity: 0;  }
+}
+@keyframes fadeOutToNone { 
+	0% { display: block; opacity: 1;  }
+	99% { display: block; opacity: 0;  }
+	100% { display: none; opacity: 0;  }
+}
+
+@keyframes fadeOutToNone { 
+	0% { display: block; opacity: 1;  }
+	99% { display: block; opacity: 0;  }
+	100% { display: none; opacity: 0;  }
+}
+
+@keyframes fadeOutToNone { 
+	0% { display: block; opacity: 1;  }
+	99% { display: block; opacity: 0;  }
+	100% { display: none; opacity: 0;  }
+}
+
+
+
+
+
+
+@keyframes fadeOut { 
+	0% { display: block; opacity: 1; right:-1000px; width:2000px; height:2000px; }
+	99% { display: block; opacity: 0; right:0; width:0px; height:0px; }
+	100% { display: block; opacity: 0; right:0; width:0px; height:0px;  }
+}
+
+@keyframes disappear { 
+	0% { display: block; opacity: 1; }
+	99% { display: block; opacity: 0; }
+	100% { display: none; opacity: 0; z-index:0; }
+}
+
+@keyframes appear { 
+	0% { display: none; opacity: 0; }
+	99% { display: block; opacity: 0; }
+	100% { display: block; opacity: 1; }
+}

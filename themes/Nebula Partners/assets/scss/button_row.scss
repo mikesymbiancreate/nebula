@@ -1,0 +1,259 @@
+#button_row {
+    margin: 0;
+    padding: 0;
+    height: 0;
+    display: block;
+    position: relative;
+    clear: both;
+    width:100%;
+
+    @media (max-width: 990px) {
+        position:absolute;
+        display:block;
+        left:0;
+        width:100%;
+        height:auto;
+    }
+
+
+    .button_row {
+        position:absolute;
+        display:block;
+        left:0;
+        width: calc(25% - .5em);
+        height: 3.5em;
+        z-index: 9990;
+        margin: 0;
+        border-color:inherit;
+        background: transparent;
+        color:inherit;
+        font-size: 1.2em;
+        line-height: 160%;
+
+        @media (max-width: 1200px) {
+            height: 1.5em;
+            transform: scale(.8);
+            -webkit-transform: scale(.8);
+            -moz-transform: scale(.8);
+            -o-transform: scale(.8);
+        }
+
+        @media (max-width: 990px) {
+            background: #0e7396;
+            position:relative;
+            display:block;
+            float:left;
+            left:inherit;
+            width: 50%;
+            border-right: 1px solid #1d2362;
+            border-bottom: 1px solid #1d2362;
+            height: auto;
+            padding:1.5em 3em;
+            transform: scale(1);
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -o-transform: scale(1);
+
+            &:nth-of-type(2n), &:nth-of-type(4n) {
+                border-right: 0px;
+            }
+        }
+
+        @media (max-width: 575px) {
+            width: 100%;
+            clear:both;
+        }
+
+       &:nth-of-type(2){
+            left:calc(25% + .5em);
+
+            @media (max-width: 990px) {
+                left:initial;
+            }
+        }
+
+        &:nth-of-type(3){
+            left: calc(50% + .5em);
+            @media (max-width: 990px) {
+                left:initial;
+            }
+        }
+
+        &:last-of-type{
+            left:initial;
+            right:0;
+            @media (max-width: 990px) {
+                left:initial;
+                right:initial;
+            }
+        }
+
+        &:hover, &:focus {
+            background:transparent;
+
+            @media (max-width: 990px) {
+                color:#0e7396;
+                background:#fff;
+            }
+
+            .target {
+                span {
+                    @media (max-width: 990px) {
+                        color:#0e7396;;
+                    }
+                }
+            }
+        }
+
+
+        .target {
+            position: absolute;
+            display: inline-block;
+            height:100%;
+            top:50%;
+            width: calc(100% + 1em);
+            min-width: 200px;
+            min-height: 200px;
+
+            @media (max-width: 1200px) {
+                width: calc(100% + 3em);
+                min-width:130px;
+            }
+
+            @media (max-width: 990px) {
+                position: relative;
+                display: block;
+                height:auto;
+                top: inherit;
+                width: auto;
+                min-width: 0px;
+                min-height: 0px;
+            }
+
+            &:hover, &:focus {
+                .bullseye { background: #fff; }
+                span { color: #6db645;
+                    margin-left:4px;
+                }
+
+            }
+
+            span, .bullseye {
+                -webkit-transition: all 0.3s;
+                -moz-transition: all 0.3s;
+                -o-transition: all 0.3s;
+                transition: all 0.3s;
+            }
+
+            span {
+                white-space: nowrap;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                color:#fff;
+                transform: translate(-50%,-50%);
+                -webkit-transform: translate(-50%,-50%);
+                -moz-transform: translate(-50%,-50%);
+                -o-transform: translate(-50%,-50%);
+                z-index: 1;
+
+                @media (max-width: 1200px) {
+                    font-size:.9em;
+                }
+
+                @media (max-width: 990px) {
+                    white-space: wrap;
+                }
+
+                &:after {
+                    content:' \21C0';
+                    position:relative;
+                    color: #6db645;
+                }
+
+                &:hover, &:focus {
+                    color: #6db645;
+                    margin-left:4px;
+                }
+            }
+
+            .bullseye {
+                position: absolute;
+                display: block;
+                z-index: 0;
+                background: #1d2362;
+                width: 100%;
+                height: 100%;
+
+                @media (max-width: 990px) {
+                   display:none;
+                }
+            }
+
+            .squish {
+                -webkit-transform: skew(-150deg) rotate(-25deg);
+                -moz-transform: skew(-150deg) rotate(-25deg);
+                -o-transform: skew(-150deg) rotate(-25deg);
+                transform: skew(-150deg) rotate(-25deg);
+                border-radius: 50%;
+            }
+
+            .squash {
+                -webkit-transform: skew(-333deg) rotate(-30deg);
+                -moz-transform: skew(-333deg) rotate(-30deg);
+                -o-transform: skew(-333deg) rotate(-30deg);
+                transform: skew(-333deg) rotate(-30deg);
+                border-radius: 50%;
+            }
+
+            .squosh {
+                -webkit-transform: skew(333deg) rotate(30deg);
+                -moz-transform: skew(333deg) rotate(30deg);
+                -o-transform: skew(333deg) rotate(30deg);
+                transform: skew(333deg) rotate(30deg);
+                border-radius: 50%;
+            }
+
+            .squidge {
+                -webkit-transform: skew(150deg) rotate(25deg);
+                -moz-transform: skew(150deg) rotate(25deg);
+                -o-transform: skew(150deg) rotate(25deg);
+                transform: skew(150deg) rotate(25deg);
+                border-radius: 50%;
+            }
+
+            .squish, .squidge, .squash, .squosh  {
+                @media (max-width: 990px) {
+                    -webkit-transform: none;
+                    -moz-transform:  none;
+                    -o-transform: none;
+                    transform:  none;
+                    border-radius: 0%;
+                }
+            }
+        }
+    }
+
+        .active {
+            .target {
+                .bullseye {
+                    background: #fff !important;
+                    box-shadow:0px 0px 50px rgba(0,0,0,0.1);
+                }
+
+                span { 
+                    color: #1d2362 !important;
+                }
+            }
+        }
+}
+
+.button-row-txt-block {
+    height: auto;
+    min-height:760px;
+
+    @media (max-width: 990px) {
+        min-height:0px;
+    }
+}
+

@@ -1,0 +1,29 @@
+/* Unique Classes */
+
+.who-we-are {
+    .container {
+        padding-bottom:0em !important;
+    }
+}
+
+.history {
+	min-height:100vh;
+    .column_title {
+        margin-bottom:.75em;
+    }
+    .container {
+    	@media (min-width:1074px) {
+    		position: absolute !important;
+    		top: 50%;
+    		left: 50%;
+    		-webkit-transform: translate(-50%,-50%);
+    		-moz-transform: translate(-50%,-50%);
+    		-o-transform: translate(-50%,-50%);
+    		transform: translate(-50%,-50%);
+    	}
+    }
+}
+
+.privacy-policy {
+    padding-top: 10em !important;
+}
